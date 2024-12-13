@@ -1,10 +1,13 @@
 {
   "name": "@shuhei-pp/greet",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "shuhei-pp's greet",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run build",
+    "build": "tsc"
   },
   "author": "Kota Shuhei",
   "license": "MIT",
